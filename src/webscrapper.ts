@@ -58,14 +58,14 @@ async function isChapterAvailable(
   checkExtraChapter: boolean
 ): Promise<void> {
   const initMessage = checkExtraChapter
-    ? "Checking for new chapter..."
-    : "Checking for new extra chapter...";
+    ? "Checking for new extra chapter..."
+    : "Checking for new chapter...";
   const successMessage = checkExtraChapter
-    ? `===> ✅ New chapter available! ${url}`
-    : `===> ✅ New extra chapter available! ${url}`;
+    ? `===> ✅ New extra chapter available! ${url}`
+    : `===> ✅ New chapter available! ${url}`;
   const failureMessage = checkExtraChapter
-    ? "===> 🔔 No new chapters available"
-    : "===> 🔔 No new extra chapters available";
+    ? "===> 🔔 No new extra chapters available"
+    : "===> 🔔 No new chapters available";
 
   console.log(initMessage);
   const res = await getHtml(url);
