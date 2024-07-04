@@ -20,8 +20,8 @@ It's basically a webscrapping script, which checks if there are new manga chapte
 
 3. Add these aliases to your ```.zshrc``` or ```.bashrc```:
 
-        alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/run.sh"
-        alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/update.sh"
+        alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/scripts/run.sh"
+        alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/scripts/update.sh"
 
 
 # Usage
