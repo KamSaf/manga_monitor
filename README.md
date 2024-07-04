@@ -16,12 +16,14 @@ It's basically a webscrapping script, which checks if there are new manga chapte
 2. Clone this repository into ```/usr/local/bin``` (```sudo``` might be needed):
 
         git clone https://github.com/KamSaf/manga_monitor.git /usr/local/bin/manga-monitor
-        git config --global --add safe.directory /usr/local/bin/manga-monitor
 
 3. Add these aliases to your ```.zshrc``` or ```.bashrc```:
 
         alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/scripts/run.sh"
         alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/scripts/update.sh"
+
+4. Open new terminal so that new aliases are available and run:
+        manga-monitor-update
 
 
 # Usage
