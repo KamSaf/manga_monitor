@@ -11,17 +11,17 @@ It's basically a webscrapping script, which checks if there are new manga chapte
 
 # How to install (Linux/MacOS):
 
-    1. Make sure you have got <a href="https://nodejs.org/en">node.js</a> and <a href="https://git-scm.com/>git</a> installed on your system.
+1. Make sure you've got <a href="https://nodejs.org/en">node.js</a> and <a href="https://git-scm.com">git</a> installed on your system.
 
-    2. Clone this repository into ```/usr/local/bin``` (```sudo``` might be needed):
+2. Clone this repository into ```/usr/local/bin``` (```sudo``` might be needed):
 
         git clone https://github.com/KamSaf/manga_monitor.git /usr/local/bin/manga-monitor
         git config --global --add safe.directory /usr/local/bin/manga-monitor
 
-    3. Add these aliases to your ```.zshrc``` or ```.bashrc```:
+3. Add these aliases to your ```.zshrc``` or ```.bashrc```:
 
-        alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/run.sh  "
-        alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/update.sh  "
+        alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/run.sh"
+        alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/update.sh"
 
 ##
 
