@@ -9,13 +9,13 @@ async function run(): Promise<void> {
 
     const chapterUrl: string =
       manga.baseUrl + "/c" + nextChapterNumber.toString();
-    await isChapterAvailable(chapterUrl, false);
+    await isChapterAvailable(manga.name, chapterUrl, false);
 
     if (manga.lastExtraChapter) {
       const nextExtraChapterNumber = parseFloat(manga.lastExtraChapter) + 1;
       const extraChapterUrl: string =
         manga.baseUrl + "/c" + nextExtraChapterNumber.toString();
-      await isChapterAvailable(extraChapterUrl, true);
+      await isChapterAvailable(manga.name, extraChapterUrl, true);
     }
     console.log("\n\n");
   }

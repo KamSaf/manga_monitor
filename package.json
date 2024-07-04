@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/src/main.js",
+    "start": "node build/src/main.js",
     "build-and-start": "npm run build && npm run start"
   },
   "keywords": [],
@@ -19,7 +19,6 @@
     "typescript-eslint": "^7.13.1"
   },
   "dependencies": {
-    "@types/node": "^20.14.9",
-    "dotenv": "^16.4.5"
+    "@types/node": "^20.14.9"
   }
 }

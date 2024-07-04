@@ -1,4 +1,5 @@
 import type { ChapterInfo } from "./types";
+import { mangaList, updateChapter } from "./io";
 
 async function getHtml(url: string): Promise<Response | void> {
   try {
@@ -54,6 +55,7 @@ function chapterExist(document: string): ChapterInfo {
 }
 
 async function isChapterAvailable(
+  name: string,
   url: string,
   checkExtraChapter: boolean
 ): Promise<void> {
@@ -74,7 +76,9 @@ async function isChapterAvailable(
     return;
   }
   const readData = await readStream(res.body);
-  const chapterAvailable = chapterExist(readData).chapterAvailable;
+  const chapterData = chapterExist(readData);
+  const chapterAvailable = chapterData.chapterAvailable;
+  updateChapter(name, chapterData.chapterNum, checkExtraChapter, mangaList);
   console.log(chapterAvailable ? successMessage : failureMessage);
 }
 
