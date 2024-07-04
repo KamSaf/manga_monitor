@@ -5,8 +5,9 @@
   "main": "src/main.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node build/src/main.js",
-    "build-and-start": "npm run build && npm run start"
+    "start": "node app/main.js",
+    "build-and-start": "npm run build && npm run start",
+    "update": "git fetch && git pull && npm run build"
   },
   "keywords": [],
   "author": "",

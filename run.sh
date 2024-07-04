@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -d "/dist" ]; then
-  if [ -z "$(ls -A /dist)" ]; then
+if [ -d "/app" ]; then
+  if [ -z "$(ls -A /app)" ]; then
     npm run build
   fi
   npm run start

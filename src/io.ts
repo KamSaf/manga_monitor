@@ -1,4 +1,4 @@
-import mangaData from "../manga.json";
+import mangaData from "./data/manga.json";
 import { Manga } from "./types";
 import fs from "fs";
 import path from "path";
@@ -6,7 +6,7 @@ import path from "path";
 const mangaList: Manga[] = mangaData;
 
 function save(mangaList: Manga[]) {
-  const filePath = path.join(__dirname, "..", "..", "manga.json");
+  const filePath = path.join(__dirname, "data", "manga.json");
   const data = JSON.stringify(mangaList);
   fs.writeFile(filePath, data, "utf-8", (err) => {
     if (err) {
