@@ -23,6 +23,20 @@ It's basically a webscrapping script, which checks if there are new manga chapte
         alias manga-monitor="sudo bash /usr/local/bin/manga-monitor/run.sh"
         alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/update.sh"
 
+
+# Usage
+
+To add manga to check go to ```/usr/local/bin/app/data/manga.json``` and just add new object like this:
+
+                [
+                    {
+                        "name": "< MANGA NAME >",
+                        "baseUrl": "< BASE MANGA URL >",
+                        "lastChapter": "< LAST CHAPTER NUMBER >",
+                        "lastExtraChapter": "< LAST EXTRA CHAPTER NUMBER>" // this one is optional
+                    },
+                ]
+
 ##
 
 Kamil Safaryjski 2024
