@@ -78,7 +78,9 @@ async function isChapterAvailable(
   const readData = await readStream(res.body);
   const chapterData = chapterExist(readData);
   const chapterAvailable = chapterData.chapterAvailable;
-  updateChapter(name, chapterData.chapterNum, checkExtraChapter, mangaList);
+  if (chapterAvailable) {
+    updateChapter(name, chapterData.chapterNum, checkExtraChapter, mangaList);
+  }
   console.log(chapterAvailable ? successMessage : failureMessage);
 }
 
