@@ -23,8 +23,10 @@ It's basically a webscrapping script, which checks if there are new manga chapte
         alias manga-monitor-update="sudo bash /usr/local/bin/manga-monitor/scripts/update.sh"
 
 4. Open new terminal so that new aliases are available and run:
-        manga-monitor-update
 
+        manga-monitor-update
+        manga-monitor
+   
 
 # Usage
 
